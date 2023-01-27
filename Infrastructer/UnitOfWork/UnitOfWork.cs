@@ -1,4 +1,4 @@
-﻿using Core.Interfaces;
+﻿    using Core.Interfaces;
 using Infrastructer.Repository;
 using Infrastructure;
 using System;
@@ -17,7 +17,7 @@ namespace Infrastructer.UnitOfWork
         public UnitOfWork(DataContext context)
         {
             _context = context;
-        }
+        }   
         public IGenericRepository<T> Entity
         {
             get

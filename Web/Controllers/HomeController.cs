@@ -14,9 +14,7 @@ namespace Web.Controllers
         private readonly IUnitOfWork<Owner> _owner;
         private readonly IUnitOfWork<PortfolioItem> _portfolio;
 
-        public HomeController(
-            IUnitOfWork<Owner> owner,
-            IUnitOfWork<PortfolioItem> portfolio)
+        public HomeController(IUnitOfWork<Owner> owner,IUnitOfWork<PortfolioItem> portfolio)
         {
             _owner = owner;
             _portfolio = portfolio;
